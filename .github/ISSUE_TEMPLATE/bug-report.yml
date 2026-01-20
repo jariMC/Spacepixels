@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  
+
   - type: textarea
     id: what-happened
     attributes:
@@ -16,7 +16,7 @@ body:
       placeholder: Tell us what you see!
     validations:
       required: true
-  
+
   - type: textarea
     id: expected-behavior
     attributes:
@@ -25,7 +25,7 @@ body:
       placeholder: Tell us what you expected!
     validations:
       required: true
-  
+
   - type: textarea
     id: steps-to-reproduce
     attributes:
@@ -37,7 +37,7 @@ body:
         3. See error
     validations:
       required: true
-  
+
   - type: textarea
     id: additional-context
     attributes:
