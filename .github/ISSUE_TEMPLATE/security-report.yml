@@ -1,0 +1,103 @@
+name: Security Report
+description: Report a security vulnerability (Collaborators only - prefer private reporting)
+title: "[SECURITY] "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ IMPORTANT: Security Vulnerability Reporting
+        
+        **This template is intended for collaborators only.**
+        
+        **IMPORTANT**: For sensitive security issues, please use GitHub's private Security Advisories feature instead of creating a public issue. Public disclosure of unpatched vulnerabilities can put users at risk.
+        
+        If you are not a collaborator and have discovered a security issue:
+        - **DO NOT** create a public issue
+        - Contact the repository maintainers privately
+        - Use GitHub's private security advisory feature
+        
+        Only proceed with this public template if the security concern is low-risk or already publicly known.
+
+  - type: textarea
+    id: vulnerability-description
+    attributes:
+      label: Security Vulnerability Description
+      description: Please provide a clear and concise description of the security vulnerability
+      placeholder: Describe the vulnerability in detail
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-component
+    attributes:
+      label: Affected Component
+      description: Which part of the project is affected?
+      placeholder: Specify the component, module, or file affected
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How would you rate the severity of this vulnerability?
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Please provide detailed steps to reproduce the vulnerability
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What is the potential impact of this vulnerability?
+      placeholder: Describe the potential consequences
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: If you have suggestions for fixing this vulnerability, please describe them
+      placeholder: Suggest potential fixes or mitigations
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the security issue here
+      placeholder: Any additional information that might be helpful
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have verified this is a genuine security concern
+          required: true
+        - label: I have considered using private security advisories for sensitive issues
+          required: true
+        - label: I am a repository collaborator or this is a low-risk/public security concern
+          required: true
