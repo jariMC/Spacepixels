@@ -28,11 +28,12 @@ Use this template to suggest new features or enhancements.
 - **Automatically applied labels**: `feature request`
 - **Required fields**: Problem Description, Proposed Solution
 
-### Security Report (`security-report.md`)
+### Security Report (`security-report.yml`)
 Use this template to report security vulnerabilities.
-- **Intended for**: Collaborators only
+- **Intended for**: Collaborators only (low-risk or public security concerns)
 - **Automatically applied labels**: `security`
-- **Important**: Non-collaborators should contact maintainers privately instead of creating public security issues
+- **Important**: For sensitive security issues, prefer GitHub's private Security Advisories feature instead of public issues
+- **Required fields**: Vulnerability Description, Affected Component, Severity Level, Steps to Reproduce, Impact
 
 ## Configuration
 
@@ -51,3 +52,17 @@ These templates use GitHub's YAML-based issue forms which provide:
 
 Issue deletion and label management require write access to the repository,
 which is restricted to collaborators, maintainers, and administrators.
+
+## Security Reporting Best Practices
+
+While a public security report template is available for collaborators, it is
+**strongly recommended** to use GitHub's private Security Advisories feature
+for reporting sensitive security vulnerabilities. This ensures:
+- Vulnerabilities are not disclosed publicly before patches are available
+- Repository maintainers can coordinate fixes privately
+- Users are protected from exploitation during the remediation process
+
+The public security template should only be used for:
+- Low-risk security concerns
+- Security issues that are already publicly known
+- Security-related discussions that don't involve active vulnerabilities
