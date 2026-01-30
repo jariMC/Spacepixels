@@ -28,6 +28,12 @@ Use this template to suggest new features or enhancements.
 - **Automatically applied labels**: `feature request`
 - **Required fields**: Problem Description, Proposed Solution
 
+### Security Report (`security-report.md`)
+Use this template to report security vulnerabilities.
+- **Intended for**: Collaborators only
+- **Automatically applied labels**: `security`
+- **Important**: Non-collaborators should contact maintainers privately instead of creating public security issues
+
 ## Configuration
 
 The `config.yml` file disables blank issue creation, ensuring all issues are
